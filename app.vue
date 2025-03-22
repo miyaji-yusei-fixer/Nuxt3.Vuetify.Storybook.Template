@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import { ref } from 'vue'
+import BottomNavigation from './components/atoms/BottomNavigation.vue'
 const showContents = ref(false)
 </script>
 <template>
