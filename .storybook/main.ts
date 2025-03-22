@@ -15,5 +15,10 @@ const config: StorybookConfig = {
   docs: {
     autodocs: "tag",
   },
+  async viteFinal(config) {
+    const vuetify = await import('vite-plugin-vuetify');
+    config.plugins?.push(vuetify.default());
+    return config;
+  },
 };
 export default config;
